@@ -101,7 +101,7 @@ def send_email():
     if recipient_email and data_rows:
         # Compose the email
         msg = MIMEMultipart()
-        msg['From'] = 'varadshinde60@gmail.com'  # Replace with your email
+        msg['From'] = ''  # Replace with your email
         msg['To'] = recipient_email
         msg['Subject'] = 'Temperature and Heart Rate Data'
         
@@ -119,8 +119,8 @@ def send_email():
             # print("Sending")
             smtp_server = 'smtp.gmail.com'  # For Gmail
             smtp_port = 587  # For TLS
-            username = 'varadshinde60@gmail.com'  # Your email
-            password = 'hyry gjyr ldyi rkbl'  # Your email password or app password
+            username = ''  # Your email
+            password = ''  # Your email password or app password
 
             with smtplib.SMTP(smtp_server, smtp_port) as server:
                 server.starttls()  # Upgrade the connection to a secure encrypted SSL/TLS connection
