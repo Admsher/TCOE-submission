@@ -52,7 +52,7 @@ def send_email(data_rows, recipient_email):
     if recipient_email and data_rows:
         # Set up the MIME message
         msg = MIMEMultipart()
-        msg['From'] = 'varadshinde60@gmail.com'
+        msg['From'] = ''
         msg['To'] = recipient_email
         msg['Subject'] = 'Temperature and Heart Rate Data with Attachments'
         
@@ -101,8 +101,8 @@ def send_email(data_rows, recipient_email):
         try:
             smtp_server = 'smtp.gmail.com'
             smtp_port = 587
-            username = 'varadshinde60@gmail.com'
-            password = 'hyry gjyr ldyi rkbl'  # Use a secure method to handle passwords
+            username = ''
+            password = ''  # Use a secure method to handle passwords
             with smtplib.SMTP(smtp_server, smtp_port) as server:
                 server.starttls()
                 server.login(username, password)
